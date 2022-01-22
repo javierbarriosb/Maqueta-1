@@ -1,0 +1,478 @@
+/* Hoja de estilos */
+
+/* Cuadro de bienvenida */
+
+h3, h6, h4{
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+}
+
+H6{
+    font-size: 19;
+}
+
+h5, a, p{
+    font-family: 'Lato', sans-serif;
+}
+
+.bienvenida{
+    width: 100%;
+}
+
+.texto-wellcome{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+}
+
+.texto-template{
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.container{
+    background: linear-gradient(120deg,#6D0EB1 55%, #320CB3);
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+    position: relative;
+}
+
+
+.titulos-bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/*Estilo para ambos botones*/
+
+.boton{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 9px 30px;
+    min-width: 210px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: .5s all ease;
+    white-space: pre-wrap;
+}
+
+.btn-ver{    
+    padding: 15px 40px;
+    background-color: #ED1C94;
+    border: none;
+    color: #fff;
+    width: 250px;
+}
+
+.btn-ver:hover{
+    background-color: #981df0; 
+}
+
+.btn-probar{    
+    padding: 15px 40px;
+    background-color: transparent; 
+    border-color: #fff;
+    color: #fff;
+    width: 250px;
+}
+
+.btn-probar:hover{
+    background-color: #ED1C94;
+    color: #fff;
+    border: none;
+}
+
+.botones-bienvenida{    
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 640px){
+    .botones-bienvenida{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-macbook{
+        width: 10rem!important;
+    }
+}
+
+/* Sección de tarjetas con ejemplos */
+
+.ejemplos{
+    background-color: #fff;
+}
+
+.container-ejemplos{
+    margin: 0 auto;
+    max-width: 970px;
+    padding: 80px 0 30px 0;
+    background-color: #fff;
+}
+
+.niche-landings{
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+}
+
+.divisor-wide{
+    width: 100%;
+    margin-bottom: 2.7rem;
+}
+
+.divisor{
+    border: 0;
+    font-size: 0;    
+    margin: 0 auto;
+    line-height: 0;
+    height: 3px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.color-divisor{
+    background: linear-gradient(to right, #ed1c94 50%, #981df0);
+}
+
+.tarjeta{
+    position: relative;
+    border-radius: .4rem;
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .7s;
+}
+
+.tarjeta-vacia{
+    position: relative;
+    border-radius: 35px;
+    margin-bottom: 1.2rem;
+}
+
+.tarjeta-vacia img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .7s ease-in-out;
+}
+
+.imagen{
+    width: 25%;
+}
+
+.sombra{
+    -webkit-box-shadow: 13px 14px 14px -17px #000000; 
+    box-shadow: 13px 14px 14px -17px #000000;
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,1);
+    background-color: #ffffff;
+    border-radius: .4rem;
+}
+
+.imageInn{
+    width: 10rem;
+}
+
+  
+.tarjeta .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.tarjeta:hover .hoverImg {
+    display: block;
+    cursor: pointer;
+}
+
+.tarjeta:hover img{
+    transform: scale(1.05);
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo-tarjeta{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    color: #29293A!important;
+    transition: .5s all ease;
+}
+
+
+.titulo-tarjeta:hover{
+    color: #981df0!important;
+    text-decoration: none;
+}
+
+/* Sección Multipage */
+
+.multipage{
+    background-color: #F2F3F9;
+}
+
+.container-multipage{
+    background-color: #F2F3F9;
+    padding-top: 4.6rem;
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+/* Sección Beneficios */
+
+.beneficios{
+    background-color: #29293A;
+}
+
+.container-beneficios{
+    background-color: #29293A;
+    padding-top: 4.6rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.titulo-beneficios{
+    color: #fff;
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    font-size: 28px;
+}
+
+.titulo-beneficios-amarillo{
+    color: #ffec17;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.icono-texto__beneficios{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.texto-parrafo-beneficios{
+    margin-top: 22px;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: .6;
+    text-align: left;
+    line-height : 25px;
+}
+
+.parrafo-beneficios{
+    width: 262px;
+}
+
+.tarjetas-beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.tarjeta-completa-beneficios{
+    margin-bottom: 2rem;
+}
+
+.fila-beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.builder{
+    background-color: #F2F3F9;
+}
+
+.container-builder{
+    background-color: #F2F3F9;
+    padding-top: 4.6rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.imagen-macbook{
+    width: 25rem;
+}
+
+.btn-try{    
+    padding: 15px 40px;
+    background-color: #ED1C94;
+    border: none;
+    color: #fff;
+    width: 250px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+.btn-try:hover{
+    background-color: #981df0; 
+}
+
+.fila-builder{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 960px){
+    .fila-builder{
+        flex-direction: column;
+        align-items: center;
+    }
+    .builder-wide{
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+}
+
+.titulo-builder{
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+    font-size: 36px;
+}
+.pretitulo-builder{
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.divisor-builder{
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 3px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.parrafo-builder{
+    font-weight: 300;
+}
+
+.parrafo-1{
+    font-size: 19px;
+    line-height : 25px;
+    color: #29293A;
+    margin-bottom: 1.3rem;
+}
+.parrafo-2{
+    font-size: 16px;
+    color: #838386;
+    line-height : 25px;
+}
+
+.divisor-wide-builder{
+    margin-bottom: 1.5rem;
+}
+
+/* Oferta Bicolor */
+
+.oferta{
+    padding: 40px 0;
+    background-image: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
+}
+
+.parrafo-oferta{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.hot{
+    background-color: #981df0;
+    padding: 2px 16px;
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+.brave{
+    font-weight: 700;
+}
+
+.buy-now{
+    color: #ffec17;
+    font-weight: 700;
+}
+
+.footer{
+    padding: 55px 0;
+    background-color: #29293A;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer img{
+    width: 45%;
+}
+
+.elementos-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.parrafo-footer{
+    color: #838386;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.parrafo-footer a{
+    text-decoration: none;
+    color: #838386;
+}
+
+.parrafo-footer a:hover{
+    text-decoration: none;
+    color: #ED1C94;
+}
+
+.redes{
+    display: flex;
+}
+
+.red{
+    display: flex;
+    justify-content: center;
+    background-color: #21212E;
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+
+.red img{
+    width: 24px;
+}
